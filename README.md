@@ -7,19 +7,17 @@ Professional consulting front-end for Dr. Ravula Uma Reddy, MSc (Ag), PhD — As
 - `index.html` — the live site (v2). Self-contained: all CSS/JS inline, fonts from Google Fonts, hero image from Unsplash, video thumbnail from YouTube's image CDN.
 - `archive/v1-initial-design.html` — earlier design, kept for reference.
 
+## Status
+
+- **Deployed**: https://uma-reddy-consulting.vercel.app/ (Vercel project `uma-reddy-consulting`; redeploy with `npx vercel deploy --prod --yes`). GitHub repo: https://github.com/manishravula/uma-reddy-consulting
+- **Profile photo**: `profile-photo.jpg` — 4:5 crop from the HMTV maxres thumbnail (`ffmpeg crop=480:600:565:25` on `i.ytimg.com/vi/UBYLh1ApkiE/maxresdefault.jpg`). Replace with a real photo when available.
+- **In the Media**: 19 verified YouTube broadcasts (deep-researched June 2026, each video ID checked live via YouTube oEmbed) + 9 press/institutional links, all identity-verified against RARS Warangal/ADR context. Excluded same-name people (FKCCI Bangalore entrepreneur, US obstetrician, politicians).
+
 ## TODO
 
-1. **Banner photo**: the hero has a placeholder portrait (initials "UR"). Search for `BANNER PHOTO` in `index.html` — replace the placeholder `<div class="portrait">...</div>` inner content with `<img src="banner-photo.jpg" alt="Dr. Ravula Uma Reddy">` once the photo is added to the repo.
-2. **Verify "30+ years"**: the experience figure in the hero badge and stats is an estimate — confirm with Dad and adjust.
-3. **Deploy to Vercel**:
-   ```bash
-   cd uma-reddy-consulting
-   git init && git add -A && git commit -m "Initial site"
-   gh repo create uma-reddy-consulting --public --source . --push   # or push manually
-   npx vercel --prod   # or import the repo at vercel.com/new for auto-deploys
-   ```
-   A Vercel token was generated for this (check validity). No `vercel.json` needed — static root deploy works as-is.
-4. Optional: custom domain, contact form backend (currently `mailto:` to ravulaumareddy68@gmail.com — consider Formspree/Vercel Functions for a real form).
+1. **Verify "30+ years"**: the experience figure in the hero badge and stats is an estimate — confirm with Dad and adjust.
+2. Optional: custom domain, contact form backend (currently `mailto:` to ravulaumareddy68@gmail.com — consider Formspree/Vercel Functions for a real form).
+3. Medium-confidence videos held back (could add after Dad confirms it's him): Agritex 2014 ANGRAU interview (8gHdE2DXUHI), 2013 drum-seeder Jaikisan clip (aycOFXCIj2U).
 
 ## Design notes
 

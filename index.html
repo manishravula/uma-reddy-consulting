@@ -156,6 +156,24 @@
   .rec span{font-size:.8rem;color:#9db8a0}
   .rec .arr{margin-left:auto;color:var(--gold-soft);flex:none;align-self:center}
   @media(max-width:880px){.media-grid{grid-template-columns:1fr}}
+  .med-h3{font-family:'Fraunces',serif;font-size:1.5rem;font-weight:600;color:#fff;margin-top:74px}
+  .med-sub{font-size:.92rem;color:#9db8a0;margin-top:7px;max-width:640px}
+  .yt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+  .ytc{display:flex;flex-direction:column;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:14px;overflow:hidden;transition:.2s}
+  .ytc:hover{background:rgba(255,255,255,.1);transform:translateY(-4px);border-color:rgba(201,162,75,.45)}
+  .yth{position:relative;display:block;aspect-ratio:16/9;overflow:hidden}
+  .yth img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+  .ytc:hover .yth img{transform:scale(1.05)}
+  .yth::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,26,16,.4),transparent 50%)}
+  .yth .yplay{position:absolute;z-index:2;top:50%;left:50%;transform:translate(-50%,-50%);width:42px;height:42px;border-radius:50%;background:rgba(201,162,75,.92);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.4)}
+  .yth .yplay svg{margin-left:3px}
+  .ytb{padding:14px 16px 16px}
+  .ytb b{display:block;color:#fff;font-size:.88rem;line-height:1.45;font-weight:600}
+  .ytb span{display:block;margin-top:6px;font-size:.74rem;letter-spacing:.04em;color:#9db8a0;text-transform:uppercase}
+  @media(max-width:880px){.yt-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.yt-grid{grid-template-columns:1fr}}
+  .press-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
+  @media(max-width:880px){.press-grid{grid-template-columns:1fr}}
 
   /* ============ TRACK RECORD ============ */
   .tr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:46px}
@@ -226,11 +244,9 @@
       </div>
     </div>
     <div class="frame">
-      <!-- BANNER PHOTO: replace the inner div with
-           <img src="banner-photo.jpg" alt="Dr. Ravula Uma Reddy"> -->
+      <!-- Portrait cropped from his HMTV "Nela Talli" field interview (youtube UBYLh1ApkiE) -->
       <div class="portrait">
-        <div class="ini">UR</div>
-        <div class="ph">Banner photo here</div>
+        <img src="profile-photo.jpg" alt="Dr. Ravula Uma Reddy speaking to HMTV in a paddy field">
       </div>
       <div class="badge"><span class="n">30+</span><span class="t">years in<br>agricultural science</span></div>
     </div>
@@ -242,9 +258,11 @@
     <div class="lab">Featured &amp; documented by</div>
     <div class="pb-row">
       <a href="https://www.youtube.com/watch?v=UBYLh1ApkiE" target="_blank" rel="noopener">HMTV <span class="dot"></span></a>
+      <a href="https://www.youtube.com/watch?v=Ytjsw6RaD0k" target="_blank" rel="noopener">V6 News <span class="dot"></span></a>
+      <a href="https://www.youtube.com/watch?v=XzxomTk3N8Y" target="_blank" rel="noopener">T News <span class="dot"></span></a>
+      <a href="https://www.youtube.com/watch?v=cn4FjHQJkxw" target="_blank" rel="noopener">All India Radio <span class="dot"></span></a>
       <a href="https://pjtsau.edu.in/cotton-research-scheme-rars-warangal-14-06-2024.html" target="_blank" rel="noopener">PJTSAU <span class="dot"></span></a>
-      <a href="https://www.pjtau.edu.in/training-modern-agriculture-agri-business-rars-warangal.html" target="_blank" rel="noopener">RARS Warangal <span class="dot"></span></a>
-      <a href="https://journalajsspn.com/index.php/AJSSPN/article/view/314" target="_blank" rel="noopener">AJSSPN Journal <span class="dot"></span></a>
+      <a href="https://www.deccanchronicle.com/nation/current-affairs/260723/warangal-farmers-pray-for-relief-heavy-rains-havoc.html" target="_blank" rel="noopener">Deccan Chronicle <span class="dot"></span></a>
       <a href="https://hindudayashankar.com/education/national-farmers-day-celebrated-at-regional-agricultural-research-station-in-warangal/" target="_blank" rel="noopener">Regional Press</a>
     </div>
   </div>
@@ -256,7 +274,7 @@
       <div class="kicker">About</div>
       <h2 class="h2">Science that has walked the fields of Telangana</h2>
       <p>Dr. Ravula Uma Reddy serves as Associate Director of Research at the Regional Agricultural Research Station (RARS), Warangal — part of Professor Jayashankar Telangana State Agricultural University (PJTSAU), the state's premier agricultural university. His career spans soil science, agronomy, and crop research across the crops that define Telangana farming: rice, maize, cotton, and redgram.</p>
-      <p>He has led zonal research and extension advisory councils, cotton and paddy research schemes, residential training programs in modern agriculture and agri-business, and seed distribution drives for farming communities — including dedicated programs for tribal beneficiaries. His advice on pest management has reached lakhs of farmers through television.</p>
+      <p>He has led zonal research and extension advisory councils, cotton and paddy research schemes, residential training programs in modern agriculture and agri-business, and seed distribution drives for farming communities — including dedicated programs for tribal beneficiaries. For over a decade his advice has reached lakhs of farmers through television and radio — HMTV, V6 News, T News, ETV, 6TV, All India Radio, and PJTSAU's own farm broadcasts.</p>
       <p>Through this practice, that experience is available directly: to a farmer planning a season, an entrepreneur building an agri-venture, or an institution seeking a research and training partner.</p>
       <div class="quote">
         <p>“Only if the soil is good will the farmers be good — and the country will be good.”</p>
@@ -270,7 +288,7 @@
         <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#c9a24b" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Associate Director of Research, RARS Warangal (PJTSAU)</li>
         <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#c9a24b" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Specialist in soil science &amp; cropping systems</li>
         <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#c9a24b" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Published researcher — rice–maize systems, nutrient management</li>
-        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#c9a24b" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>TV-featured expert on cotton pest management (HMTV)</li>
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#c9a24b" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Featured across Telugu agri media — HMTV, V6, T News, ETV, AIR</li>
         <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#c9a24b" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Leads farmer training &amp; extension across Central Telangana</li>
       </ul>
     </aside>
@@ -319,7 +337,7 @@
   <div class="wrap">
     <div class="kicker">In the Media</div>
     <h2 class="h2">Don't take our word for it — watch</h2>
-    <p class="lead">Dr. Uma Reddy's guidance reaches farmers across Telangana through television, university programs, and the regional press.</p>
+    <p class="lead">Dr. Uma Reddy's guidance reaches farmers across Telangana through television, radio, university programs, and the regional press. Below is every appearance we could publicly verify — nineteen broadcasts and a dozen articles, each linked to its source.</p>
     <div class="media-grid">
       <div class="video-card reveal">
         <div class="vc-head"><span class="live"></span><span><b>HMTV · Nela Talli</b> — expert interview</span></div>
@@ -330,27 +348,149 @@
         <div class="vc-foot">Pink bollworm management in cotton — practical guidance for farmers. <a href="https://www.youtube.com/watch?v=UBYLh1ApkiE" target="_blank" rel="noopener">Watch on YouTube ↗</a></div>
       </div>
       <div class="rec-list">
+        <a class="rec reveal" href="https://www.thehansindia.com/telangana/celebrations-mark-90-years-of-warangal-air-1073802" target="_blank" rel="noopener">
+          <span class="src">Hans India</span>
+          <div><b>Chief guest as Warangal All India Radio turned 90</b><span>Flagged off the anniversary walkathon; credited AIR's role in farm extension · 2026</span></div>
+          <span class="arr">↗</span>
+        </a>
+        <a class="rec reveal" href="https://www.ntnews.com/warangal-rural/dr-r-uma-reddy-suggested-that-farmers-should-focus-on-crop-rotation-1985479" target="_blank" rel="noopener">
+          <span class="src">NT News</span>
+          <div><b>“Farmers should focus on crop rotation” — Dr. R. Uma Reddy</b><span>Greengram, pigeon pea &amp; millets to cut urea use and save water · 2025</span></div>
+          <span class="arr">↗</span>
+        </a>
+        <a class="rec reveal" href="https://www.deccanchronicle.com/nation/current-affairs/260723/warangal-farmers-pray-for-relief-heavy-rains-havoc.html" target="_blank" rel="noopener">
+          <span class="src">Deccan Chr.</span>
+          <div><b>Expert voice amid Warangal's heavy-rain crisis</b><span>Contingency crop advice for farmers facing delayed sowing · 2023</span></div>
+          <span class="arr">↗</span>
+        </a>
         <a class="rec reveal" href="https://hindudayashankar.com/education/national-farmers-day-celebrated-at-regional-agricultural-research-station-in-warangal/" target="_blank" rel="noopener">
           <span class="src">Press</span>
           <div><b>Chief guest, National Farmers' Day at RARS Warangal</b><span>Addressed farmers on protecting soil health for future generations</span></div>
           <span class="arr">↗</span>
         </a>
-        <a class="rec reveal" href="https://pjtsau.edu.in/cotton-research-scheme-rars-warangal-14-06-2024.html" target="_blank" rel="noopener">
-          <span class="src alt">PJTSAU</span>
-          <div><b>Led cotton research scheme programs, RARS Warangal</b><span>Cotton &amp; redgram cultivation awareness for farmers, 2024</span></div>
-          <span class="arr">↗</span>
-        </a>
-        <a class="rec reveal" href="https://www.pjtau.edu.in/training-modern-agriculture-agri-business-rars-warangal.html" target="_blank" rel="noopener">
-          <span class="src alt">PJTSAU</span>
-          <div><b>Chief guest, residential training in modern agriculture &amp; agri-business</b><span>Skilling rural youth for agri-enterprises and value-added products</span></div>
-          <span class="arr">↗</span>
-        </a>
-        <a class="rec reveal" href="https://www.pjtau.edu.in/rars-warangal-training-paddy-03-07-2023.html" target="_blank" rel="noopener">
-          <span class="src alt">PJTSAU</span>
-          <div><b>Seed distribution &amp; kharif training for tribal beneficiaries</b><span>Paddy cultivation program, RARS Warangal, 2023</span></div>
-          <span class="arr">↗</span>
-        </a>
       </div>
+    </div>
+
+    <h3 class="med-h3 reveal">On air, on record — every broadcast we could verify</h3>
+    <p class="med-sub reveal">Eighteen more appearances across Telugu news and farm channels, 2016 to today. Click any card to watch on YouTube.</p>
+    <div class="yt-grid">
+      <a class="ytc reveal" href="https://www.youtube.com/watch?v=z2BGbHJmn2M" target="_blank" rel="noopener">
+        <span class="yth"><img src="https://i.ytimg.com/vi/z2BGbHJmn2M/hqdefault.jpg" alt="Dr. Uma Reddy on paddy cultivation problems" loading="lazy"><span class="yplay"><svg width="16" height="16" viewBox="0 0 24 24" fill="#10291a"><path d="M8 5v14l11-7z"/></svg></span></span>
+        <span class="ytb"><b>Advice on paddy cultivation problems</b><span>MyGromor · Coromandel · 2026</span></span>
+      </a>
+      <a class="ytc reveal" href="https://www.youtube.com/watch?v=kfcixkctDxA" target="_blank" rel="noopener">
+        <span class="yth"><img src="https://i.ytimg.com/vi/kfcixkctDxA/hqdefault.jpg" alt="Dr. Uma Reddy on cotton and maize crop problems" loading="lazy"><span class="yplay"><svg width="16" height="16" viewBox="0 0 24 24" fill="#10291a"><path d="M8 5v14l11-7z"/></svg></span></span>
+        <span class="ytb"><b>Advice on cotton &amp; maize crop problems</b><span>MyGromor · Coromandel · 2026</span></span>
+      </a>
+      <a class="ytc reveal" href="https://www.youtube.com/watch?v=Ytjsw6RaD0k" target="_blank" rel="noopener">
+        <span class="yth"><img src="https://i.ytimg.com/vi/Ytjsw6RaD0k/hqdefault.jpg" alt="V6 News face-to-face on cotton fungus" loading="lazy"><span class="yplay"><svg width="16" height="16" viewBox="0 0 24 24" fill="#10291a"><path d="M8 5v14l11-7z"/></svg></span></span>
+        <span class="ytb"><b>Face-to-face on the cotton fungus outbreak</b><span>V6 News · 2025</span></span>
+      </a>
+      <a class="ytc reveal" href="https://www.youtube.com/watch?v=XzxomTk3N8Y" target="_blank" rel="noopener">
+        <span class="yth"><img src="https://i.ytimg.com/vi/XzxomTk3N8Y/hqdefault.jpg" alt="T News face-to-face on urea" loading="lazy"><span class="yplay"><svg width="16" height="16" viewBox="0 0 24 24" fill="#10291a"><path d="M8 5v14l11-7z"/></svg></span></span>
+        <span class="ytb"><b>Face-to-face on the urea question</b><span>T News · 2025</span></span>
+      </a>
+      <a class="ytc reveal" href="https://www.youtube.com/watch?v=bn657-iVi80" target="_blank" rel="noopener">
+        <span class="yth"><img src="https://i.ytimg.com/vi/bn657-iVi80/hqdefault.jpg" alt="V6 News on southwest monsoon entry" loading="lazy"><span class="yplay"><svg width="16" height="16" viewBox="0 0 24 24" fill="#10291a"><path d="M8 5v14l11-7z"/></svg></span></span>
+        <span class="ytb"><b>Southwest monsoon arrives — what farmers should do</b><span>V6 News · 2025</span></span>
+      </a>
+      <a class="ytc reveal" href="https://www.youtube.com/watch?v=cn4FjHQJkxw" target="_blank" rel="noopener">
+        <span class="yth"><img src="https://i.ytimg.com/vi/cn4FjHQJkxw/hqdefault.jpg" alt="AIR Warangal Kisanvani interview" loading="lazy"><span class="yplay"><svg width="16" height="16" viewBox="0 0 24 24" fill="#10291a"><path d="M8 5v14l11-7z"/></svg></span></span>
+        <span class="ytb"><b>Kisanvani interview — Associate Director, RARS Warangal</b><span>All India Radio, Warangal · 2025</span></span>
+      </a>
+      <a class="ytc reveal" href="https://www.youtube.com/watch?v=udaln02dOBc" target="_blank" rel="noopener">
+        <span class="yth"><img src="https://i.ytimg.com/vi/udaln02dOBc/hqdefault.jpg" alt="Rabi maize cultivation advice" loading="lazy"><span class="yplay"><svg width="16" height="16" viewBox="0 0 24 24" fill="#10291a"><path d="M8 5v14l11-7z"/></svg></span></span>
+        <span class="ytb"><b>Rabi maize varieties &amp; cultivation management</b><span>Evusam TV · 2024</span></span>
+      </a>
+      <a class="ytc reveal" href="https://www.youtube.com/watch?v=k4UXK-xb9UQ" target="_blank" rel="noopener">
+        <span class="yth"><img src="https://i.ytimg.com/vi/k4UXK-xb9UQ/hqdefault.jpg" alt="Preventing flower drop in cotton" loading="lazy"><span class="yplay"><svg width="16" height="16" viewBox="0 0 24 24" fill="#10291a"><path d="M8 5v14l11-7z"/></svg></span></span>
+        <span class="ytb"><b>Preventing flower drop in cotton</b><span>Evusam TV · 2024</span></span>
+      </a>
+      <a class="ytc reveal" href="https://www.youtube.com/watch?v=lG8Bca8ZPoU" target="_blank" rel="noopener">
+        <span class="yth"><img src="https://i.ytimg.com/vi/lG8Bca8ZPoU/hqdefault.jpg" alt="Why crop residues should not be burnt" loading="lazy"><span class="yplay"><svg width="16" height="16" viewBox="0 0 24 24" fill="#10291a"><path d="M8 5v14l11-7z"/></svg></span></span>
+        <span class="ytb"><b>Why crop residues should never be burnt</b><span>Evusam TV · 2024</span></span>
+      </a>
+      <a class="ytc reveal" href="https://www.youtube.com/watch?v=ON1NgRFi9ec" target="_blank" rel="noopener">
+        <span class="yth"><img src="https://i.ytimg.com/vi/ON1NgRFi9ec/hqdefault.jpg" alt="Seed Mela announcement" loading="lazy"><span class="yplay"><svg width="16" height="16" viewBox="0 0 24 24" fill="#10291a"><path d="M8 5v14l11-7z"/></svg></span></span>
+        <span class="ytb"><b>Announcing the statewide Seed Mela, as Warangal ADR</b><span>Evusam TV · 2024</span></span>
+      </a>
+      <a class="ytc reveal" href="https://www.youtube.com/watch?v=vU9t9GyLg74" target="_blank" rel="noopener">
+        <span class="yth"><img src="https://i.ytimg.com/vi/vU9t9GyLg74/hqdefault.jpg" alt="Rythu Nestham episode on soil organic carbon" loading="lazy"><span class="yplay"><svg width="16" height="16" viewBox="0 0 24 24" fill="#10291a"><path d="M8 5v14l11-7z"/></svg></span></span>
+        <span class="ytb"><b>Rythu Nestham: raising organic carbon in soil</b><span>PJTSAU · 2024</span></span>
+      </a>
+      <a class="ytc reveal" href="https://www.youtube.com/watch?v=UQIfx2n-hYw" target="_blank" rel="noopener">
+        <span class="yth"><img src="https://i.ytimg.com/vi/UQIfx2n-hYw/hqdefault.jpg" alt="On the state agriculture budget" loading="lazy"><span class="yplay"><svg width="16" height="16" viewBox="0 0 24 24" fill="#10291a"><path d="M8 5v14l11-7z"/></svg></span></span>
+        <span class="ytb"><b>A senior scientist's read on the agriculture budget</b><span>hmtv Agri · 2022</span></span>
+      </a>
+      <a class="ytc reveal" href="https://www.youtube.com/watch?v=Nvv-sXS-iJ8" target="_blank" rel="noopener">
+        <span class="yth"><img src="https://i.ytimg.com/vi/Nvv-sXS-iJ8/hqdefault.jpg" alt="Ground report on rains impact" loading="lazy"><span class="yplay"><svg width="16" height="16" viewBox="0 0 24 24" fill="#10291a"><path d="M8 5v14l11-7z"/></svg></span></span>
+        <span class="ytb"><b>Ground report: rains' impact on cotton &amp; paddy</b><span>V6 News · 2022</span></span>
+      </a>
+      <a class="ytc reveal" href="https://www.youtube.com/watch?v=BWhPfvnCJsg" target="_blank" rel="noopener">
+        <span class="yth"><img src="https://i.ytimg.com/vi/BWhPfvnCJsg/hqdefault.jpg" alt="Crops submerged by heavy rains" loading="lazy"><span class="yplay"><svg width="16" height="16" viewBox="0 0 24 24" fill="#10291a"><path d="M8 5v14l11-7z"/></svg></span></span>
+        <span class="ytb"><b>Crops submerged by heavy rains — F2F as ADR</b><span>6TV · 2022</span></span>
+      </a>
+      <a class="ytc reveal" href="https://www.youtube.com/watch?v=gdkcyrG8hms" target="_blank" rel="noopener">
+        <span class="yth"><img src="https://i.ytimg.com/vi/gdkcyrG8hms/hqdefault.jpg" alt="Direct-seeded paddy to cut labour costs" loading="lazy"><span class="yplay"><svg width="16" height="16" viewBox="0 0 24 24" fill="#10291a"><path d="M8 5v14l11-7z"/></svg></span></span>
+        <span class="ytb"><b>Direct-seeded (vedha) paddy to cut labour costs</b><span>hmtv Agri · 2021</span></span>
+      </a>
+      <a class="ytc reveal" href="https://www.youtube.com/watch?v=2Zah1Ne__yg" target="_blank" rel="noopener">
+        <span class="yth"><img src="https://i.ytimg.com/vi/2Zah1Ne__yg/hqdefault.jpg" alt="Inspecting farmlands at Atmakur" loading="lazy"><span class="yplay"><svg width="16" height="16" viewBox="0 0 24 24" fill="#10291a"><path d="M8 5v14l11-7z"/></svg></span></span>
+        <span class="ytb"><b>Inspecting farmlands at Atmakur, Warangal</b><span>Mana Telangana TV · 2021</span></span>
+      </a>
+      <a class="ytc reveal" href="https://www.youtube.com/watch?v=ihVRFCwfJlM" target="_blank" rel="noopener">
+        <span class="yth"><img src="https://i.ytimg.com/vi/ihVRFCwfJlM/hqdefault.jpg" alt="ETV Jaikisan face-to-face on kharif sowing" loading="lazy"><span class="yplay"><svg width="16" height="16" viewBox="0 0 24 24" fill="#10291a"><path d="M8 5v14l11-7z"/></svg></span></span>
+        <span class="ytb"><b>Jaikisan face-to-face on kharif sowing</b><span>ETV · 2019</span></span>
+      </a>
+      <a class="ytc reveal" href="https://www.youtube.com/watch?v=squ5ai7PAHc" target="_blank" rel="noopener">
+        <span class="yth"><img src="https://i.ytimg.com/vi/squ5ai7PAHc/hqdefault.jpg" alt="Nela Talli kharif tips for farmers" loading="lazy"><span class="yplay"><svg width="16" height="16" viewBox="0 0 24 24" fill="#10291a"><path d="M8 5v14l11-7z"/></svg></span></span>
+        <span class="ytb"><b>Nela Talli: kharif tips for farmers</b><span>HMTV · 2016</span></span>
+      </a>
+    </div>
+
+    <h3 class="med-h3 reveal">In print &amp; on the university record</h3>
+    <p class="med-sub reveal">Coverage in the English and Telugu press, and PJTSAU's own program records.</p>
+    <div class="press-grid">
+      <a class="rec reveal" href="https://hindudayashankar.com/education/international-pulses-day-by-regional-agricultural-research-station-in-warangal/" target="_blank" rel="noopener">
+        <span class="src">Press</span>
+        <div><b>Chief guest, International Pulses Day at RARS Warangal</b><span>On pulses' nutrition and soil-fertility benefits · 2026</span></div>
+        <span class="arr">↗</span>
+      </a>
+      <a class="rec reveal" href="https://www.ntnews.com/medak/telangana-rythu-vignana-kendram-is-for-give-suggestions-to-farmers-2249100" target="_blank" rel="noopener">
+        <span class="src">NT News</span>
+        <div><b>Inspected the Rythu Vignana Kendram, Medak</b><span>Announced farmer advisory, extension &amp; training services · 2025</span></div>
+        <span class="arr">↗</span>
+      </a>
+      <a class="rec reveal" href="https://www.ntnews.com/warangal-rural/agricultural-scientist-uma-reddy-suggests-that-farmers-should-adopt-crop-rotation-system-2003779" target="_blank" rel="noopener">
+        <span class="src">NT News</span>
+        <div><b>“Adopt crop rotation” — pulses &amp; oilseeds before rice</b><span>Higher yields, less urea, better soil · 2025</span></div>
+        <span class="arr">↗</span>
+      </a>
+      <a class="rec reveal" href="https://10tv.in/telugu-news/agriculture/cultivation-of-kharif-crops-in-telugu-837823.html" target="_blank" rel="noopener">
+        <span class="src">10TV</span>
+        <div><b>Kharif crops: best cultivation practices for Warangal</b><span>Low-investment, high-yield guidance as ADR · 2024</span></div>
+        <span class="arr">↗</span>
+      </a>
+      <a class="rec reveal" href="https://telanganatoday.com/rich-director-calls-for-collaborative-efforts-for-benefitting-farming-community" target="_blank" rel="noopener">
+        <span class="src">T. Today</span>
+        <div><b>Urged engineering R&amp;D for farm technologies</b><span>Industry–academia event with RICH, Warangal · 2021</span></div>
+        <span class="arr">↗</span>
+      </a>
+      <a class="rec reveal" href="https://pjtsau.edu.in/cotton-research-scheme-rars-warangal-14-06-2024.html" target="_blank" rel="noopener">
+        <span class="src alt">PJTSAU</span>
+        <div><b>Cotton research scheme programs, RARS Warangal</b><span>Cotton &amp; redgram cultivation awareness for farmers · 2024</span></div>
+        <span class="arr">↗</span>
+      </a>
+      <a class="rec reveal" href="https://www.pjtau.edu.in/training-modern-agriculture-agri-business-rars-warangal.html" target="_blank" rel="noopener">
+        <span class="src alt">PJTSAU</span>
+        <div><b>Chief guest, residential training in modern agriculture &amp; agri-business</b><span>Skilling rural youth for agri-enterprises and value-added products</span></div>
+        <span class="arr">↗</span>
+      </a>
+      <a class="rec reveal" href="https://www.pjtau.edu.in/rars-warangal-training-paddy-03-07-2023.html" target="_blank" rel="noopener">
+        <span class="src alt">PJTSAU</span>
+        <div><b>Seed distribution &amp; kharif training for tribal beneficiaries</b><span>Paddy cultivation program, RARS Warangal · 2023</span></div>
+        <span class="arr">↗</span>
+      </a>
     </div>
   </div>
 </section>
@@ -378,6 +518,24 @@
         <h3>Research direction across rice, cotton, maize &amp; redgram for Central Telangana</h3>
         <p>As Associate Director of Research, oversees crop research schemes and scientist–farmer interface programs.</p>
         <a class="more" href="https://pjtsau.edu.in/cotton-research-scheme-rars-warangal-14-06-2024.html" target="_blank" rel="noopener">View activity →</a>
+      </div>
+      <div class="tr reveal">
+        <div class="yr">2022 · Peer-reviewed</div>
+        <h3>KNM 1638 — a high-yielding, gall-midge-resistant early-duration rice variety for Telangana</h3>
+        <p>International Journal of Bio-resource and Stress Management 13(7) — co-author on the PJTSAU variety-release paper.</p>
+        <a class="more" href="https://ojs.pphouse.org/index.php/IJBSM/article/view/4273" target="_blank" rel="noopener">View publication →</a>
+      </div>
+      <div class="tr reveal">
+        <div class="yr">2022 · Peer-reviewed</div>
+        <h3>Phenotypic &amp; genotypic screening of Warangal rice varieties against gall midge</h3>
+        <p>Environment and Ecology 40(3A) — co-author, screening RARS Warangal rice lines for pest resistance.</p>
+        <a class="more" href="https://www.researchgate.net/publication/363859811_54_Phenotypic_and_Genotypic_Screening_of_Warangal_Rice_Varieties_against_Gall_Midge_Orseolia_oryzae" target="_blank" rel="noopener">View publication →</a>
+      </div>
+      <div class="tr reveal">
+        <div class="yr">2021 · Peer-reviewed</div>
+        <h3>Mechanization in cotton — an overview</h3>
+        <p>Chronicle of Bioresource Management 5(2) — co-author, RARS Warangal, on mechanizing India's cotton cultivation.</p>
+        <a class="more" href="https://www.ojs.pphouse.org/index.php/CBM/article/view/3891" target="_blank" rel="noopener">View publication →</a>
       </div>
     </div>
   </div>
