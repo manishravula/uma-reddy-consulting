@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Ravula Uma Reddy — Agricultural Research &amp; Advisory</title>
+<meta name="description" content="Dr. Ravula Uma Reddy, MSc (Ag), PhD — Agricultural scientist and consultant. Agronomy, soil health, agri-business advisory, research & training. Warangal, Telangana, India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green-900:#1b3a26;
+    --green-800:#234a30;
+    --green-700:#2e5d3d;
+    --green-100:#e8f0e9;
+    --earth:#b98a3c;
+    --earth-light:#f5ecd9;
+    --ink:#22271f;
+    --muted:#5c6657;
+    --bg:#faf9f5;
+    --card:#ffffff;
+    --radius:14px;
+    --shadow:0 6px 24px rgba(27,58,38,.08);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
+  h1,h2,h3{font-family:'Fraunces',serif;color:var(--green-900);line-height:1.2}
+  a{color:var(--green-700);text-decoration:none}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+  section{padding:80px 0}
+  .eyebrow{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--earth);margin-bottom:14px}
+  .section-title{font-size:clamp(1.7rem,3.4vw,2.4rem);margin-bottom:18px}
+  .lead{font-size:1.08rem;color:var(--muted);max-width:680px}
+
+  /* NAV */
+  nav{position:sticky;top:0;z-index:50;background:rgba(250,249,245,.92);backdrop-filter:blur(10px);border-bottom:1px solid #e7e5dc}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .brand{font-family:'Fraunces',serif;font-weight:700;font-size:1.12rem;color:var(--green-900)}
+  .brand span{color:var(--earth)}
+  .nav-links{display:flex;gap:26px;font-size:.92rem;font-weight:500}
+  .nav-links a:hover{color:var(--green-900)}
+  .nav-cta{background:var(--green-800);color:#fff !important;padding:9px 18px;border-radius:999px;font-weight:600}
+  .nav-cta:hover{background:var(--green-900)}
+  @media(max-width:760px){.nav-links a:not(.nav-cta){display:none}}
+
+  /* HERO */
+  header.hero{
+    position:relative;color:#fff;
+    background:
+      linear-gradient(100deg,rgba(20,42,27,.93) 0%,rgba(27,58,38,.82) 45%,rgba(27,58,38,.45) 100%),
+      url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=70') center/cover no-repeat,
+      var(--green-900);
+  }
+  .hero-grid{display:grid;grid-template-columns:1.35fr .85fr;gap:48px;align-items:center;padding:96px 0 88px}
+  .hero h1{color:#fff;font-size:clamp(2.2rem,4.6vw,3.4rem);margin:14px 0 10px}
+  .hero .creds{font-size:1.05rem;color:#e8d9b8;font-weight:600;letter-spacing:.02em}
+  .hero p.sub{margin:20px 0 32px;font-size:1.1rem;color:#dce6dd;max-width:560px}
+  .hero .eyebrow{color:#e3c789}
+  .btn-row{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:13px 26px;border-radius:999px;font-weight:600;font-size:.97rem;transition:.2s}
+  .btn-primary{background:var(--earth);color:#fff}
+  .btn-primary:hover{background:#a87a2f}
+  .btn-ghost{border:1.5px solid rgba(255,255,255,.55);color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.12)}
+
+  /* PORTRAIT — replace the placeholder below with the banner photo */
+  .portrait{
+    width:100%;max-width:340px;aspect-ratio:4/5;margin-left:auto;
+    border-radius:18px;overflow:hidden;
+    box-shadow:0 22px 50px rgba(0,0,0,.35);
+    border:4px solid rgba(255,255,255,.18);
+    background:linear-gradient(160deg,#2e5d3d,#1b3a26);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+  }
+  .portrait .initials{font-family:'Fraunces',serif;font-size:4.6rem;font-weight:700;color:#e3c789}
+  .portrait .hint{font-size:.78rem;color:#bcd0bf;letter-spacing:.08em;text-transform:uppercase}
+  .portrait img{width:100%;height:100%;object-fit:cover;display:block}
+  @media(max-width:860px){
+    .hero-grid{grid-template-columns:1fr;padding:70px 0 60px}
+    .portrait{margin:0 auto;max-width:280px}
+  }
+
+  /* STATS BAR */
+  .stats{background:var(--green-900);color:#fff;padding:30px 0}
+  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+  .stat b{display:block;font-family:'Fraunces',serif;font-size:1.9rem;color:#e3c789}
+  .stat span{font-size:.85rem;color:#c4d4c7}
+  @media(max-width:760px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
+
+  /* ABOUT */
+  .about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:start}
+  .about-grid p{margin-bottom:16px;color:#3c443a}
+  .cred-card{background:var(--card);border:1px solid #e7e5dc;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+  .cred-card h3{font-size:1.05rem;margin-bottom:14px}
+  .cred-card ul{list-style:none}
+  .cred-card li{padding:10px 0;border-bottom:1px solid #efeee7;font-size:.93rem;display:flex;gap:10px}
+  .cred-card li:last-child{border-bottom:none}
+  .cred-card li::before{content:"✦";color:var(--earth);font-size:.8rem;margin-top:3px}
+  @media(max-width:860px){.about-grid{grid-template-columns:1fr}}
+
+  /* SERVICES */
+  #services{background:var(--green-100)}
+  .svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:40px}
+  .svc{background:var(--card);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);border-top:4px solid var(--green-700);transition:transform .2s}
+  .svc:hover{transform:translateY(-4px)}
+  .svc .icon{font-size:1.9rem;margin-bottom:14px;display:block}
+  .svc h3{font-size:1.18rem;margin-bottom:10px}
+  .svc p{font-size:.95rem;color:var(--muted)}
+  @media(max-width:760px){.svc-grid{grid-template-columns:1fr}}
+
+  /* EXPERIENCE */
+  .timeline{margin-top:36px;border-left:2px solid #d8d5c8;padding-left:30px}
+  .t-item{position:relative;padding-bottom:34px}
+  .t-item:last-child{padding-bottom:0}
+  .t-item::before{content:"";position:absolute;left:-37px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--earth);border:3px solid var(--bg)}
+  .t-item h3{font-size:1.08rem}
+  .t-item .org{color:var(--green-700);font-weight:600;font-size:.92rem;margin:2px 0 6px}
+  .t-item p{font-size:.94rem;color:var(--muted);max-width:640px}
+
+  /* RESEARCH */
+  #research{background:var(--earth-light)}
+  .pub{background:var(--card);border-radius:var(--radius);padding:24px 28px;margin-top:18px;box-shadow:var(--shadow);border-left:4px solid var(--earth)}
+  .pub h3{font-size:1.02rem;margin-bottom:6px}
+  .pub p{font-size:.9rem;color:var(--muted)}
+  .note{font-size:.85rem;color:var(--muted);margin-top:22px;font-style:italic}
+
+  /* CONTACT */
+  #contact{background:var(--green-900);color:#fff}
+  #contact .section-title,#contact h3{color:#fff}
+  #contact .lead{color:#c4d4c7}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:36px;align-items:start}
+  .c-item{display:flex;gap:14px;margin-bottom:22px;align-items:flex-start}
+  .c-item .ci{font-size:1.3rem}
+  .c-item b{display:block;font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;color:#e3c789;margin-bottom:2px}
+  .c-item a,.c-item span{color:#fff;font-size:1.02rem}
+  form{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:var(--radius);padding:30px}
+  form label{display:block;font-size:.85rem;font-weight:600;margin:14px 0 6px;color:#dce6dd}
+  form input,form textarea{width:100%;padding:12px 14px;border-radius:8px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.1);color:#fff;font-family:inherit;font-size:.95rem}
+  form input::placeholder,form textarea::placeholder{color:#9fb3a3}
+  form button{margin-top:20px;width:100%;border:none;cursor:pointer}
+  @media(max-width:760px){.contact-grid{grid-template-columns:1fr}}
+
+  footer{background:#142a1b;color:#9fb3a3;text-align:center;padding:26px 0;font-size:.85rem}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-inner">
+    <div class="brand">Dr. Uma Reddy <span>Ravula</span></div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
+      <a href="#contact" class="nav-cta">Book a Consultation</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Agricultural Research &amp; Advisory</span>
+      <h1>Dr. Ravula Uma Reddy</h1>
+      <div class="creds">MSc (Ag) · PhD · Associate Director of Research, RARS Warangal, PJTSAU</div>
+      <p class="sub">Three decades of field-tested agricultural science — now available to farmers, agri-businesses, FPOs, and institutions. From soil to harvest to market, get advice grounded in research, not guesswork.</p>
+      <div class="btn-row">
+        <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+        <a href="#services" class="btn btn-ghost">Explore Services</a>
+      </div>
+    </div>
+    <!-- BANNER PHOTO: replace the placeholder div below with:
+         <div class="portrait"><img src="banner-photo.jpg" alt="Dr. Ravula Uma Reddy"></div> -->
+    <div class="portrait">
+      <div class="initials">UR</div>
+      <div class="hint">Banner photo here</div>
+    </div>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat"><b>30+</b><span>Years in agricultural science</span></div>
+    <div class="stat"><b>4</b><span>Major crop systems: rice, maize, cotton, pulses</span></div>
+    <div class="stat"><b>100s</b><span>Farmer training programs led</span></div>
+    <div class="stat"><b>PJTSAU</b><span>Telangana's premier agricultural university</span></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+      <span class="eyebrow">About</span>
+      <h2 class="section-title">Science that has walked the fields of Telangana</h2>
+      <p>Dr. Ravula Uma Reddy is a senior agricultural scientist serving as Associate Director of Research at the Regional Agricultural Research Station (RARS), Warangal — part of Professor Jayashankar Telangana State Agricultural University (PJTSAU). With a doctorate in agricultural sciences and a career spanning soil science, agronomy, and crop research, he has spent decades translating research-station findings into practical guidance for farmers.</p>
+      <p>His work covers the crops that define Telangana agriculture: rice–maize cropping systems, cotton (including pink bollworm management strategies featured in regional media), redgram, and soil health management. He has led zonal research and extension advisory programs, seed distribution and training initiatives, and capacity-building for farmers and tribal communities across the Central Telangana Zone.</p>
+      <p>Through this consulting practice, that experience is now available directly — to individual farmers planning a season, agri-entrepreneurs building a venture, and institutions seeking research and training partnerships.</p>
+    </div>
+    <div class="cred-card">
+      <h3>Credentials &amp; Roles</h3>
+      <ul>
+        <li>MSc (Agriculture), PhD</li>
+        <li>Associate Director of Research, RARS Warangal, PJTSAU</li>
+        <li>Soil Science &amp; Agronomy specialist</li>
+        <li>Published researcher — rice–maize cropping systems, nutrient management</li>
+        <li>Media-featured expert on cotton pest management</li>
+        <li>Leader of farmer training &amp; extension programs across Central Telangana</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <span class="eyebrow">Consulting Services</span>
+    <h2 class="section-title">How I can help</h2>
+    <p class="lead">Engagements range from a single advisory call to season-long programs and institutional partnerships.</p>
+    <div class="svc-grid">
+      <div class="svc">
+        <span class="icon">🌾</span>
+        <h3>Agronomy &amp; Crop Advisory</h3>
+        <p>Season planning, variety selection, and cultivation guidance for rice, maize, cotton, and pulses. Integrated pest management — including pink bollworm strategies for cotton — and timely interventions that protect yield.</p>
+      </div>
+      <div class="svc">
+        <span class="icon">🧪</span>
+        <h3>Soil Health &amp; Nutrient Management</h3>
+        <p>Soil test interpretation, fertilizer scheduling, and residue management plans. Research-backed nutrient strategies for cropping systems — including paddy straw management and nitrogen optimization in rice–maize rotations.</p>
+      </div>
+      <div class="svc">
+        <span class="icon">📈</span>
+        <h3>Agri-Business &amp; Farm Ventures</h3>
+        <p>Advisory for agri-startups, FPOs, and farm enterprises: crop economics, value-added products, modern agri-business models, and connecting ventures with the research and government ecosystem.</p>
+      </div>
+      <div class="svc">
+        <span class="icon">🎓</span>
+        <h3>Research &amp; Training Services</h3>
+        <p>Field trial design and supervision, training program development, and institutional consulting. Decades of experience running extension programs, seed distribution drives, and scientist–farmer advisory councils.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <span class="eyebrow">Experience</span>
+    <h2 class="section-title">A career in public agricultural research</h2>
+    <div class="timeline">
+      <div class="t-item">
+        <h3>Associate Director of Research</h3>
+        <div class="org">Regional Agricultural Research Station (RARS), Warangal — PJTSAU</div>
+        <p>Leading research direction for the Central Telangana Zone: coordinating crop research schemes (rice, cotton, maize, redgram), zonal research &amp; extension advisory councils, and scientist–farmer interface programs.</p>
+      </div>
+      <div class="t-item">
+        <h3>Research Scientist — Soil Science &amp; Agronomy</h3>
+        <div class="org">PJTSAU / ANGRAU system</div>
+        <p>Conducted and published research on cropping systems, nutrient management, and crop productivity, contributing to recommendations adopted across Telangana's farming zones.</p>
+      </div>
+      <div class="t-item">
+        <h3>Extension &amp; Farmer Capacity Building</h3>
+        <div class="org">Across Central Telangana Zone</div>
+        <p>Chief guest and lead trainer at programs on modern agriculture and agri-business; led kharif training for tribal beneficiaries, seed distribution drives, and on-air advisories on crop protection.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <span class="eyebrow">Research &amp; Media</span>
+    <h2 class="section-title">Selected work</h2>
+    <div class="pub">
+      <h3>Yield Attributes and Yield of Maize as Influenced by Paddy Straw Management Options and Nitrogen Levels in Rice–Maize Cropping Systems</h3>
+      <p>Asian Journal of Soil Science and Plant Nutrition, 2024 — co-author, Department of Soil Science, RARS Warangal.</p>
+    </div>
+    <div class="pub">
+      <h3>Television interview: Pink Bollworm Management in Cotton</h3>
+      <p>HMTV "Nela Talli" — expert guidance for cotton farmers on identifying and managing pink bollworm infestations.</p>
+    </div>
+    <div class="pub">
+      <h3>Zonal Research &amp; Extension Advisory Programs</h3>
+      <p>Regular leadership of advisory council meetings, cotton and redgram cultivation programs, and farmer–scientist interface sessions at RARS Warangal.</p>
+    </div>
+    <p class="note">A full list of publications and program reports is available on request.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <span class="eyebrow" style="color:#e3c789">Get in Touch</span>
+    <h2 class="section-title">Book a consultation</h2>
+    <p class="lead">Describe your farm, venture, or institution and what you'd like help with. You'll receive a response within 2–3 working days.</p>
+    <div class="contact-grid">
+      <div>
+        <div class="c-item"><span class="ci">✉️</span><div><b>Email</b><a href="mailto:ravulaumareddy68@gmail.com">ravulaumareddy68@gmail.com</a></div></div>
+        <div class="c-item"><span class="ci">📍</span><div><b>Based in</b><span>Warangal, Telangana, India</span></div></div>
+        <div class="c-item"><span class="ci">🕘</span><div><b>Engagements</b><span>Advisory calls · Field visits · Season-long programs · Institutional partnerships</span></div></div>
+      </div>
+      <form action="mailto:ravulaumareddy68@gmail.com" method="get" enctype="text/plain" onsubmit="return mailTo(event)">
+        <label for="name">Your name</label>
+        <input id="name" type="text" placeholder="Full name" required>
+        <label for="from">Your email or phone</label>
+        <input id="from" type="text" placeholder="So we can reach you" required>
+        <label for="msg">What do you need help with?</label>
+        <textarea id="msg" rows="4" placeholder="Crop, location, and the challenge you're facing…" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Enquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© <span id="yr"></span> Dr. Ravula Uma Reddy · Agricultural Research &amp; Advisory · Warangal, Telangana</div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  function mailTo(e){
+    e.preventDefault();
+    const n=document.getElementById('name').value,
+          f=document.getElementById('from').value,
+          m=document.getElementById('msg').value;
+    const body=encodeURIComponent("Name: "+n+"\nContact: "+f+"\n\n"+m);
+    const subject=encodeURIComponent("Consultation enquiry from "+n);
+    window.location.href="mailto:ravulaumareddy68@gmail.com?subject="+subject+"&body="+body;
+    return false;
+  }
+</script>
+</body>
+</html>
